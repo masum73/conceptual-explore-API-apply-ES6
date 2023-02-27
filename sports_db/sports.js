@@ -1,13 +1,13 @@
 //get the data from API
-const serachAllData = (id) => {
+const searchAllData = (id) => {
   const inputElement = document.getElementById("search-value");
   document.getElementById("single-player-details").innerHTML = "";
   document.getElementById("male").classList.add("d-none");
   document.getElementById("female").classList.add("d-none");
   const inputValue = inputElement.value;
   document.getElementById("spinner").classList.remove("d-none");
-  const serchId = id || inputValue;
-  const URL = `https://www.thesportsdb.com/api/v1/json/3/searchplayers.php?p=${serchId}`;
+  const searchId = id || inputValue;
+  const URL = `https://www.thesportsdb.com/api/v1/json/3/searchplayers.php?p=${searchId}`;
   console.log(URL);
 
   fetch(URL)
@@ -87,4 +87,4 @@ const showSinglePlayer = (data) => {
   container.appendChild(div);
 };
 
-serachAllData("messi");
+searchAllData("messi");

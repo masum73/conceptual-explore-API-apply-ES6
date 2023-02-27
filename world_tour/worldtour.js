@@ -18,7 +18,7 @@ const loadMyData = async () => {
   const res = await fetch("https://restcountries.com/v3.1/all");
   const data = await res.json();
   console.log(data);
-  showAllData(data.slice(0, 5));
+  showAllData(data.slice(0, 6));
 };
 loadMyData();
 

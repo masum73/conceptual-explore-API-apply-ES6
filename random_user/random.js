@@ -13,13 +13,10 @@ const displayRandomGirl = (randomGirl) => {
     const div = document.createElement("div");
     div.innerHTML = `
     <div class="card card-compact w-96 bg-base-100 shadow-xl">
-    <figure><img src="${singleGirl.picture.large}" alt="Shoes" /></figure>
+    <figure><img src="${singleGirl.picture.large}" class="mt-3" alt="Shoes" /></figure>
     <div class="card-body">
-      <h2 class="card-title">${singleGirl.name.first} ${singleGirl.name.last}</h2>
-      <p>${singleGirl.email}</p>
-      <div class="card-actions justify-end">
-        <button class="btn btn-primary">Buy Now</button>
-      </div>
+      <h2 class="card-title">Name: ${singleGirl.name.first} ${singleGirl.name.last}</h2>
+      <p>Email: ${singleGirl.email}</p>
     </div>
   </div>
 
